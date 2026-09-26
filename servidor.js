@@ -175,7 +175,7 @@ async function tratarComando(remetente, texto) {
     const evento = armazenamento.obterEvento(id);
     const ok = armazenamento.cancelarPresenca(id, remetente);
     if (!ok) return 'Esse evento não foi encontrado.';
-    return `Tudo bem, anotamos que você não vai a "${evento.nome}". 👍`;
+    return `Tudo bem, anotamos que você não vai a "${evento.nome}".`;
   }
 
   if (textoMinusculo.startsWith('simresumo_')) {
@@ -197,7 +197,7 @@ async function tratarComando(remetente, texto) {
     const evento = armazenamento.obterEvento(id);
     const ok = armazenamento.cancelarPresenca(id, remetente);
     if (!ok) return 'Esse evento não foi encontrado.';
-    return `Tudo bem, anotamos que você não vai a "${evento.nome}". 👍`;
+    return `Tudo bem, anotamos que você não vai a "${evento.nome}".`;
   }
 
   // "criar evento" inicia o fluxo guiado (pergunta por pergunta)
