@@ -100,7 +100,8 @@ criar evento     -> inicia a criação de um evento, pergunta por pergunta
 **Configuração de prazos**  
 
 Em configuracao.js:  
-MINUTOS_ANTECEDENCIA_LEMBRETE: 60, -> quantos minutos antes o lembrete é enviado | MINUTOS_PRAZO_CONFIRMACAO: 0, -> quando o resumo final é enviado, em relação ao horário do evento  
+MINUTOS_ANTECEDENCIA_LEMBRETE: 60, -> quantos minutos antes o lembrete é enviado 
+MINUTOS_PRAZO_CONFIRMACAO: 0, -> quando o resumo final é enviado, em relação ao horário do evento  
    
 **Segurança e privacidade**  
 - As credenciais reais nunca ficam no código: todas vêm do .env, que está no .gitignore e nunca é versionado.  
